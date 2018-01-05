@@ -15,27 +15,27 @@
 
         <EditText
             style="@style/defaultStyle"
-            android:text="@{person.firstName}"/>
+            android:text="@={person.firstName}"/>
 
         <EditText
             style="@style/defaultStyle"
-            android:text="@{person.lastName}"/>
+            android:text="@={person.lastName}"/>
 
         <EditText
             style="@style/defaultStyle"
-            android:text="@{mchehab.com.twowaydatabinding.Converter.toString(person.age)}"/>
+            android:text="@={converter.toString(person.age)}"/>
 
         <TextView
             style="@style/textView"
-            android:text="@{person.firstName}"/>
+            android:text="@={person.firstName}"/>
 
         <TextView
             style="@style/textView"
-            android:text="@{person.lastName}"/>
+            android:text="@={person.lastName}"/>
 
         <TextView
             style="@style/textView"
-            android:text="@{mchehab.com.twowaydatabinding.Converter.toString(person.age)}"/>
+            android:text="@={converter.toString(person.age)}"/>
 
         <Button
             style="@style/defaultStyle"
