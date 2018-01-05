@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="mchehab.com.twowaydatabinding.MainActivity">
+
+    <data>
+        <variable name="person" type="mchehab.com.kotlinapp.Person"/>
+        <variable name="mainActivity" type="mchehab.com.kotlinapp.MainActivity"/>
+        <variable name="converter" type="mchehab.com.kotlinapp.Converter"/>
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            style="@style/defaultStyle"
+            android:text="@={person.firstName}"/>
+
+        <EditText
+            style="@style/defaultStyle"
+            android:text="@={person.lastName}"/>
+
+        <EditText
+            style="@style/defaultStyle"
+            android:text="@={converter.toString(person.age)}"/>
+
+        <TextView
+            style="@style/textView"
+            android:text="@={person.firstName}"/>
+
+        <TextView
+            style="@style/textView"
+            android:text="@={person.lastName}"/>
+
+        <TextView
+            style="@style/textView"
+            android:text="@={converter.toString(person.age)}"/>
+
+        <Button
+            style="@style/defaultStyle"
+            android:onClick="@{mainActivity::onButtonClick}"
+            android:text="Button"/>
+
+    </LinearLayout>
+</layout>
