@@ -23,7 +23,7 @@
 
         <EditText
             style="@style/defaultStyle"
-            android:text="@={converter.toString(person.age)}"/>
+            android:text="@={mchehab.com.twowaydatabinding.Converter.toString(person.age)}"/>
 
         <TextView
             style="@style/textView"
@@ -35,7 +35,7 @@
 
         <TextView
             style="@style/textView"
-            android:text="@={converter.toString(person.age)}"/>
+            android:text="@={mchehab.com.twowaydatabinding.Converter.toString(person.age)}"/>
 
         <Button
             style="@style/defaultStyle"
