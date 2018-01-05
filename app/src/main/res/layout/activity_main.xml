@@ -23,7 +23,8 @@
 
         <EditText
             style="@style/defaultStyle"
-            android:text="@={mchehab.com.twowaydatabinding.Converter.toString(person.age)}"/>
+            android:text="@={mchehab.com.twowaydatabinding.Converter.toString(person.age)}"
+            android:inputType="number"/>
 
         <TextView
             style="@style/textView"
